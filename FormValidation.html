@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Html Form Validation</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+    <h1>Sign Up</h1><br><br>
+    <form action="loginForm.html" method="post" onsubmit="return validateForm()">
+      <label>First Name</label><input
+        type="text"
+        name="firstName"
+        id="fname"
+        required
+        autofocus
+        class="box"
+      /><br />
+      <label>Last Name</label><input
+        type="text"
+        name="lastName"
+        id="lname"
+        required
+        class="box"
+      /><br />
+      <label>Mobile No</label><input
+        type="tel"
+        name="mobileNum"
+        id = "mbNum"
+        required
+        class="box"
+      /><br />
+      <label>Email</label><input type="email" name="mailId" required  id = "mail_iD" class="box"/><br />
+      <label>Password</label><input type="password" name="pword" required id="passWd" class="box"/><br />
+      <label>Confirm Password</label><input
+        type="password"
+        name="cnfPword"
+        id="cnpWord"
+        required
+        class="box"
+      /><br /><br />
+      <input type="submit" value="Login" id="submit" onclick="validateForm()"/><input type="reset" id="reset"/>
+      <h3 id="signUp">Already Sign Up <span><a href="loginForm.html">Login</a></span></h3>
+    </form>
+    </div >
+  </body>
+</html>
